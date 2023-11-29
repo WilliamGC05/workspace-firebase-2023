@@ -59,12 +59,14 @@ $('#google').click(function () {
     // The signed-in user info.
     var user = result.user;
     
+    // User is signed in.
     console.log("Sign in through Google username: " + user);
 
   }).catch((error) => {
     // Handle Errors here.
     var errorCode = error.code;
     var errorMessage = error.message;
+
     console.log("Error: " + errorMessage);
     // The email of the user's account used.
     var email = error.email;
