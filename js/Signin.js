@@ -60,11 +60,12 @@ $('#google').click(function () {
     var user = result.user;
     
     console.log("Sign in through Google username: " + user);
-    
+
   }).catch((error) => {
     // Handle Errors here.
     var errorCode = error.code;
     var errorMessage = error.message;
+    console.log("Error: " + errorMessage);
     // The email of the user's account used.
     var email = error.email;
     // The firebase.auth.AuthCredential type that was used.
